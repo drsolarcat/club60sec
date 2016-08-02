@@ -1,0 +1,17 @@
+{% load wagtailimages_tags %}
+<section class="product-right wood-divider">
+    <div class="background-image-holder">
+        {% image value.background original %}
+    </div>
+    <div class="container align-vertical">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-white">{{ value.header }}</h1>
+                <p class="text-white lead">{{ value.text }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="product-image">
+        {% image value.image original %}
+    </div>
+</section>

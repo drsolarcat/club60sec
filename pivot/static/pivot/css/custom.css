@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Days;
+  src: url("../fonts/7fonts.ru_Days.otf") format("opentype");
+}
+.blank-input {
+  font-family: "Days", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.font-body {
+  font-family: "Days", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.font-heading {
+  font-family: "Days", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+  font-family: "Days", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
+  font-family: "Days", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.top-bar .logo {
+  max-width: unset;
+  max-height: 100px;
+}
+.google-form {
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+.google-form-holder {
+  height: 850px;
+}
+.google-form-holder iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+/*.google-form-holder:before {
+  content: '';
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.google-form-holder.on:before {
+  width: 0%;
+}*/
+/*.google-form-overlay {
+  padding: 160px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.google-form-overlay:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  content: '';
+  opacity: 0.9;
+  z-index: 2;
+  background-color: #e74c3c;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.google-form-overlay .google-form-holder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0px;
+}
+.google-form-overlay .google-form-holder iframe {
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  bottom: -80px;
+}
+.google-form-overlay .container {
+  position: relative;
+  z-index: 2;
+}*/

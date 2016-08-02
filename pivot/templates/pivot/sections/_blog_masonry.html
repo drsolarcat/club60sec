@@ -1,0 +1,31 @@
+{% load wagtailimages_tags wagtailcore_tags %}
+
+{% for block in value.page.specific.body %}
+{% if block.block_type == 'blog_single' %}
+{% with block.value as post %}
+<div class="col-md-4 col-sm-6 blog-masonry-item branding">
+    <div class="item-inner" vht="parent">
+        {% if value.media %}<iframe src="{{ value.media }}"></iframe>{% endif %}
+        {% if value.image %}
+        {% image value.image original as im %}
+        <a href="{{ value.page.url }}">
+            <img src="{{ im.url }}" alt="{{ im.alt }}">
+        </a>
+        {% endif %}
+        <div class="post-title">
+            {% if value.abstract %}
+            <h2>{{ value.title }}</h2>
+            <p>{{ post.abstract }}</p>
+            {% else %}
+            <h1>{{ value.title }}</h1>
+            {% endif %}
+            <div class="post-meta">
+                <span class="sub alt-font">{{ value.date }}</span>
+            </div>
+            <a href="{{ value.page.url }}" class="link-text">Читать</a>
+        </div>
+    </div>
+</div>
+{% endwith %}
+{% endif %}
+{% endfor %}

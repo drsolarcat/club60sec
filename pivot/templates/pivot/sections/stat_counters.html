@@ -1,0 +1,18 @@
+{% load wagtailimages_tags %}
+<section class="stat-counters duplicatable-content">
+    <div class="background-image-holder parallax-background">
+        {% image value.background original %}
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                <h1>{{ value.header }}</h1>  
+            </div>
+        </div>
+        <div class="row">
+            {% for block in value.counters %}
+            {{ block }}
+            {% endfor %}
+        </div>
+    </div>
+</section>

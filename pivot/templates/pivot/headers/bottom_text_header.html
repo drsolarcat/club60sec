@@ -1,0 +1,15 @@
+{% load wagtailimages_tags %}
+<header class="title">
+    <div class="background-image-holder">
+        {% image value.background original %}
+    </div>
+    <div class="container align-bottom">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <h1 class="text-white">{{ value.header }}</h1>
+                <span class="sub alt-font text-white">{{ value.subheader }}</span>
+            </div>
+        </div>
+    </div>
+</header>

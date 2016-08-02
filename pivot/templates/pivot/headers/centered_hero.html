@@ -1,0 +1,17 @@
+{% load wagtailimages_tags %}
+<header class="fullscreen-element no-pad centered-text">
+    <div class="background-image-holder parallax-background overlay">
+        {% image value.background original %}
+    </div>
+    <div class="container align-vertical">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <span class="text-white alt-font">{{ value.subheader }}</span>
+                <h1 class="text-white">{{ value.header }}</h1>
+                <p class="lead text-white">{{ value.text }}</p>
+                <!-- <a target="_blank" href="http://www.mediumra.re/pivot/variant/builder.html" class="btn btn-primary btn-white">Customize Pivot</a> -->
+                <!-- <a href="#" class="btn btn-primary btn-filled">Purchase Pivot</a> -->
+            </div>
+        </div>
+    </div>
+</header>

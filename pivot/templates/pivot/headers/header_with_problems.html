@@ -1,0 +1,24 @@
+{% load wagtailimages_tags %}
+<header class="page-header">
+    <div class="background-image-holder parallax-background">
+        {% image value.background original %}
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                {% image value.image original %}
+                <h2 id="example-question" class="text-white space-bottom-medium">{{ value.header }}</h2>
+                <h1 id="example-answer" class="text-white space-bottom-medium"></h1>
+                <a id="example-question-answer-button" target="_blank" href="#" class="btn btn-primary btn-white">Узнать ответ</a>
+                <a id="example-question-next-button" target="_blank" href="#" class="btn btn-primary btn-white">Еще вопрос</a>
+                <a href="#" class="btn btn-primary btn-filled">Записаться на игру</a>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    var p = [];
+    {% for block in value.problems %}
+    p.push({'q':'{{ block.question }}','a':'{{ block.answer }}'})
+    {% endfor %}
+</script>

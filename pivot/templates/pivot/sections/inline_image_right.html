@@ -1,0 +1,15 @@
+{% load wagtailimages_tags %}
+<section class="inline-image-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 align-vertical no-align-mobile">
+                <h1>{{ value.header }}</h1>
+                <h6>{{ value.subheader }}</h6>
+                <p class="lead">{{ value.text }}</p>
+            </div>
+            <div class="col-sm-6 text-center">
+                {% image value.image original %}
+            </div>
+        </div>
+    </div>
+</section>

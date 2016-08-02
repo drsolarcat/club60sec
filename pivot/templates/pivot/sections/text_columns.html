@@ -1,0 +1,14 @@
+<section class="duplicatable-content pure-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>{{ value.header }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            {% for block in value.columns %}
+            {{ block }}
+            {% endfor %}
+        </div>
+    </div>
+</section>

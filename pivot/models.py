@@ -73,6 +73,9 @@ class HeaderWithProblemsBlock(StructBlock):
 
 # sections
 
+# class SectionBlock(StructBlock):
+#     anchor = CharBlock()
+
 class CenteredTextBlock(StructBlock):
     header = CharBlock()
     subheader = CharBlock()
@@ -97,6 +100,9 @@ class InlineImageRightBlock(StructBlock):
     image = ImageChooserBlock()
     class Meta:
         template = 'pivot/sections/inline_image_right.html'
+
+# class ProjectsContainedBlock(StructBlock):
+#     pass
 
 class StatCountersBlock(StructBlock):
     header = CharBlock()
